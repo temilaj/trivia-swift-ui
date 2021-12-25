@@ -11,6 +11,15 @@
 		121B70FA277680DF00162B47 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121B70F9277680DF00162B47 /* ContentView.swift */; };
 		121B70FC277680E100162B47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 121B70FB277680E100162B47 /* Assets.xcassets */; };
 		121B70FF277680E100162B47 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 121B70FE277680E100162B47 /* Preview Assets.xcassets */; };
+		121B7107277682F700162B47 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121B7106277682F700162B47 /* PrimaryButton.swift */; };
+		121B710A277685CA00162B47 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121B7109277685CA00162B47 /* Extensions.swift */; };
+		121B710E2776869A00162B47 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121B710D2776869A00162B47 /* QuestionView.swift */; };
+		121B71112776894F00162B47 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121B71102776894F00162B47 /* ProgressBar.swift */; };
+		121B711427768B4D00162B47 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121B711327768B4D00162B47 /* Option.swift */; };
+		121B711627768BF900162B47 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121B711527768BF900162B47 /* APIResponse.swift */; };
+		121B711927768CC300162B47 /* OptionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121B711827768CC300162B47 /* OptionRow.swift */; };
+		121B711B277690D500162B47 /* TriviaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121B711A277690D400162B47 /* TriviaView.swift */; };
+		121B711D2776987300162B47 /* TriviaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121B711C2776987300162B47 /* TriviaManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,15 @@
 		121B70F9277680DF00162B47 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		121B70FB277680E100162B47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		121B70FE277680E100162B47 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		121B7106277682F700162B47 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		121B7109277685CA00162B47 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		121B710D2776869A00162B47 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		121B71102776894F00162B47 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		121B711327768B4D00162B47 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		121B711527768BF900162B47 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		121B711827768CC300162B47 /* OptionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionRow.swift; sourceTree = "<group>"; };
+		121B711A277690D400162B47 /* TriviaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaView.swift; sourceTree = "<group>"; };
+		121B711C2776987300162B47 /* TriviaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +69,14 @@
 		121B70F6277680DF00162B47 /* Trivia */ = {
 			isa = PBXGroup;
 			children = (
+				121B711227768B3D00162B47 /* Models */,
+				121B7108277684B400162B47 /* Views */,
+				121B7105277682E000162B47 /* Components */,
 				121B70F7277680DF00162B47 /* TriviaApp.swift */,
-				121B70F9277680DF00162B47 /* ContentView.swift */,
 				121B70FB277680E100162B47 /* Assets.xcassets */,
 				121B70FD277680E100162B47 /* Preview Content */,
+				121B7109277685CA00162B47 /* Extensions.swift */,
+				121B711C2776987300162B47 /* TriviaManager.swift */,
 			);
 			path = Trivia;
 			sourceTree = "<group>";
@@ -65,6 +87,35 @@
 				121B70FE277680E100162B47 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		121B7105277682E000162B47 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				121B7106277682F700162B47 /* PrimaryButton.swift */,
+				121B71102776894F00162B47 /* ProgressBar.swift */,
+				121B711827768CC300162B47 /* OptionRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		121B7108277684B400162B47 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				121B70F9277680DF00162B47 /* ContentView.swift */,
+				121B710D2776869A00162B47 /* QuestionView.swift */,
+				121B711A277690D400162B47 /* TriviaView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		121B711227768B3D00162B47 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				121B711327768B4D00162B47 /* Option.swift */,
+				121B711527768BF900162B47 /* APIResponse.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +188,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				121B710E2776869A00162B47 /* QuestionView.swift in Sources */,
+				121B711927768CC300162B47 /* OptionRow.swift in Sources */,
+				121B7107277682F700162B47 /* PrimaryButton.swift in Sources */,
+				121B711B277690D500162B47 /* TriviaView.swift in Sources */,
+				121B711D2776987300162B47 /* TriviaManager.swift in Sources */,
 				121B70FA277680DF00162B47 /* ContentView.swift in Sources */,
+				121B711427768B4D00162B47 /* Option.swift in Sources */,
 				121B70F8277680DF00162B47 /* TriviaApp.swift in Sources */,
+				121B711627768BF900162B47 /* APIResponse.swift in Sources */,
+				121B71112776894F00162B47 /* ProgressBar.swift in Sources */,
+				121B710A277685CA00162B47 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
